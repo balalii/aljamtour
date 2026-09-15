@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-15T00:00:00Z",
+  "title": "Design System: Aljamtour",
+  "extensions": {
+    "colorMeta": {
+      "navy-800": {
+        "role": "primary",
+        "displayName": "Permit Navy",
+        "canonical": "#123163",
+        "tonalRamp": [
+          "#071429",
+          "#0b2044",
+          "#123163",
+          "#1b4285",
+          "#2a57a0",
+          "#3f6fbd",
+          "#8ba6cf",
+          "#dde6f2"
+        ]
+      },
+      "navy-950": {
+        "role": "primary",
+        "displayName": "Night Navy",
+        "canonical": "#071429",
+        "tonalRamp": [
+          "#071429",
+          "#0b2044",
+          "#123163",
+          "#1b4285",
+          "#2a57a0",
+          "#3f6fbd",
+          "#8ba6cf",
+          "#dde6f2"
+        ]
+      },
+      "navy-700": {
+        "role": "primary",
+        "displayName": "Interaction Navy",
+        "canonical": "#1b4285",
+        "tonalRamp": [
+          "#071429",
+          "#0b2044",
+          "#123163",
+          "#1b4285",
+          "#2a57a0",
+          "#3f6fbd",
+          "#8ba6cf",
+          "#dde6f2"
+        ]
+      },
+      "navy-600": {
+        "role": "primary",
+        "displayName": "Icon Navy",
+        "canonical": "#2a57a0",
+        "tonalRamp": [
+          "#071429",
+          "#0b2044",
+          "#123163",
+          "#1b4285",
+          "#2a57a0",
+          "#3f6fbd",
+          "#8ba6cf",
+          "#eef3f9"
+        ]
+      },
+      "navy-100": {
+        "role": "primary",
+        "displayName": "On-Navy Copy",
+        "canonical": "#dde6f2",
+        "tonalRamp": [
+          "#071429",
+          "#0b2044",
+          "#123163",
+          "#1b4285",
+          "#2a57a0",
+          "#3f6fbd",
+          "#8ba6cf",
+          "#eef3f9"
+        ]
+      },
+      "amber-500": {
+        "role": "secondary",
+        "displayName": "Signal Amber",
+        "canonical": "#fbb117",
+        "tonalRamp": [
+          "#3d2a02",
+          "#6b4a05",
+          "#9c6b07",
+          "#d9930a",
+          "#fbb117",
+          "#fdc44c",
+          "#fde2a8",
+          "#fef2d6"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f2f1ee",
+        "tonalRamp": [
+          "#26241f",
+          "#3d3a33",
+          "#5a564d",
+          "#807b70",
+          "#a8a399",
+          "#cdc9c1",
+          "#e8e6e1",
+          "#f2f1ee"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Plate White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#1c1c1c",
+          "#333333",
+          "#4f4f4f",
+          "#737373",
+          "#9e9e9e",
+          "#c9c9c9",
+          "#ebebeb",
+          "#ffffff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#3f4b63",
+        "tonalRamp": [
+          "#161b24",
+          "#232b3a",
+          "#313c50",
+          "#3f4b63",
+          "#5e6b85",
+          "#8994a8",
+          "#b6becc",
+          "#dfe3ea"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Quiet Ink",
+        "canonical": "#5e6b85",
+        "tonalRamp": [
+          "#161b24",
+          "#232b3a",
+          "#313c50",
+          "#3f4b63",
+          "#5e6b85",
+          "#8994a8",
+          "#b6becc",
+          "#dfe3ea"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero headline, once per page: white sentence at 400 with one amber word at 800 on the dark field."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, a 400 sentence with one 800 span."
+      },
+      "quote": {
+        "displayName": "Pull Quote",
+        "purpose": "The pembimbing quote, once per page."
+      },
+      "figure-lead": {
+        "displayName": "Lead Figure",
+        "purpose": "The one figure that leads the ledger band; tabular."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Prices and ledger numbers; tabular, tight tracking."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card names and permit numbers."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Journey step titles, ledger labels, mobile drawer links."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section-opening paragraphs, FAQ questions, testimonial quotes, the lockup wordmark."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, capped at 46rem or 62ch."
+      },
+      "body-fluid": {
+        "displayName": "Body, fluid",
+        "purpose": "Hero subcopy only."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "The default interface size: nav links, pill labels, select values, card copy, footer links."
+      },
+      "detail": {
+        "displayName": "Detail",
+        "purpose": "Card feature lists, small pill labels, the hero proof line."
+      },
+      "fine": {
+        "displayName": "Fine",
+        "purpose": "Disclaimers, the notice band, sub-captions."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase field labels, dl terms, footer column headings, captions."
+      },
+      "label-sm": {
+        "displayName": "Label, small",
+        "purpose": "The most-chosen badge on a package card."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "The logo lockup descriptor line only; hidden below 400px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 1px 2px rgb(18 49 99 / 0.04), 0 12px 28px -12px rgb(18 49 99 / 0.16)",
+        "purpose": "Filled action pills. Separates the action from the ground without reading as a bevel."
+      },
+      {
+        "name": "float",
+        "value": "0 2px 4px rgb(18 49 99 / 0.05), 0 28px 60px -24px rgb(18 49 99 / 0.28)",
+        "purpose": "Elements genuinely overlapping another surface: the Pandu plate over the hero photo, the highlighted package card, the fixed WhatsApp action."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Timed motion only: the hero arrival, hovers and state transitions. Scroll-driven motion uses --ease-scroll."
+      },
+      {
+        "name": "ease-scroll",
+        "value": "cubic-bezier(0.38, 0.02, 0.2, 1)",
+        "purpose": "Every scroll-timeline animation. A hard deceleration spends most of its change in the first pixels of travel: built on --ease-settle the reveals measured 0.76 opacity at the first sample and could not be felt."
+      },
+      {
+        "name": "settle",
+        "value": "settle 0.9s var(--ease-settle) both",
+        "purpose": "Hero content arrival: a 1.25rem rise with a 10px blur clearing."
+      },
+      {
+        "name": "delay-ladder",
+        "value": "d1 0.05s / d2 0.14s / d3 0.23s / d4 0.32s / d5 0.44s / d6 0.58s",
+        "purpose": "The six-step ladder orchestrating the hero arrival."
+      },
+      {
+        "name": "curtain",
+        "value": "curtain 1.25s var(--ease-settle) both",
+        "purpose": "A solid navy-950 sheet over the hero photograph fading 1 to 0. Its resting state is opacity:0, set outside the reduced-motion query: an opaque default hid the photograph whenever motion was reduced."
+      },
+      {
+        "name": "hold-release",
+        "value": "hold-release 1.6s var(--ease-settle) both",
+        "purpose": "The hero photograph settling back from scale(1.06)."
+      },
+      {
+        "name": "land",
+        "value": "land 0.62s var(--ease-settle) 0.3s both",
+        "purpose": "The amber word arriving after the sentence it sits in. The 0.3s delay is the authored beat; at 0.42s the gap read as a missing word."
+      },
+      {
+        "name": "rail-draw",
+        "value": "rail-draw linear both; animation-timeline: view(); animation-range: entry 30% cover 55%",
+        "purpose": "The journey rail traced as the reader travels it: the only scroll-driven element on the page, because the scroll relationship is the meaning. Resting transform is none, so unsupporting browsers and reduced-motion readers get the full rail."
+      },
+      {
+        "name": "sr / sr-rise",
+        "value": "opacity 0 -> 1, translateY(3rem) -> none, blur(7px) -> 0; animation-timeline: view(); animation-range: cover 4% cover 46%; timing var(--ease-scroll)",
+        "purpose": "The general scroll arrival, on section headings, dividers, prose, cards, steps, quotes, disclosures and the footer grid. Used only where a section has no logic of its own."
+      },
+      {
+        "name": "sr-wipe",
+        "value": "opacity 0 -> 1, translateX(-2.75rem) -> none, blur(5px) -> 0; cover 4% cover 46%",
+        "purpose": "The Tentang ledger's entry rows only: entries written in from the margin of a record."
+      },
+      {
+        "name": "sr-unveil",
+        "value": "opacity 0 -> 1, translateY(4rem) scale(1.06) -> none; animation-range: cover 0% cover 40%",
+        "purpose": "The two arched photographs only: the arch uncovering what stands inside it. Carries no blur on purpose - the largest painted surfaces on the page, where the filter is not worth it on a mid-range phone."
+      },
+      {
+        "name": "sr-come",
+        "value": "opacity 0.2 -> 1, translateY(2.5rem) scale(0.955) -> none; animation-range: cover 0% cover 36%",
+        "purpose": "The closing panel only: it steps forward to be answered. No blur, for the same budget reason as sr-unveil."
+      },
+      {
+        "name": "st1-st4",
+        "value": "animation-range: cover 10/16/22/28% to cover 52/58/64/70%",
+        "purpose": "Stagger as a shift of the scroll range, never a time delay, so a slow scroll reads the sequence and a fast scroll queues no backlog. Grouped sets cap at st4."
+      },
+      {
+        "name": "sr-js fallback",
+        "value": ".sr-js :is(.sr,.sr-wipe,.sr-unveil,.sr-come) { opacity:0; transition: opacity/transform/filter .95s var(--ease-scroll) } + .sr-in; st1-st4 delay 0.1-0.4s",
+        "purpose": "Applied by Reveal.tsx only after view-timeline support is ruled out and reduced motion is not requested. All hiding CSS is scoped under .sr-js, so a browser where the script never runs shows the full page rather than a blank one."
+      },
+      {
+        "name": "tab-indicator",
+        "value": "transition: transform 0.3s var(--ease-settle); motion-reduce:transition-none",
+        "purpose": "One navy pill translating between two deliberately equal-width tabs (w-1/2), so the move is a pure translate and the radius never distorts."
+      },
+      {
+        "name": "details-content",
+        "value": "transition: block-size 0.34s var(--ease-settle), content-visibility 0.34s allow-discrete",
+        "purpose": "FAQ disclosures open instead of snapping, under @supports (interpolate-size: allow-keywords). Unsupported browsers keep the instant open."
+      },
+      {
+        "name": "panel-in",
+        "value": "panel-in 0.4s var(--ease-settle) both",
+        "purpose": "Crossfade when a tabbed panel swaps under a control."
+      },
+      {
+        "name": "press",
+        "value": "transition: transform 0.12s var(--ease-settle); :active { transform: scale(0.975) }",
+        "purpose": "Touch feedback on all five action families. Deliberately outside the reduced-motion query: it confirms a tap rather than decorating one."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: no-preference)",
+        "purpose": "All animation but press feedback is wrapped. Re-verified: 54 animated elements tracked, 0 hidden, 0 animations running, rail fully drawn, .sr-js not applied."
+      },
+      {
+        "name": "scroll-range-doctrine",
+        "value": "cover, never entry",
+        "purpose": "An entry range is only as long as the element is tall, so one class made short blocks finish in a blink (0 -> 1.00 across ~58px, complete at the bottom edge) and tall ones crawl. cover spans viewport plus element, so short and tall resolve in the same place: measured 0.00 at 102% of viewport height through 1.00 at 57%."
+      },
+      {
+        "name": "overflow-clip-requirement",
+        "value": "overflow: clip on any wrapper containing a scroll reveal, never overflow: hidden",
+        "purpose": "hidden makes the element a scroll container, so a view() timeline inside resolves against that box, which never scrolls, and the reveal freezes at its start value. Shipped once as a ledger row permanently at opacity 0 on mobile and at 360px. clip clips identically, border-radius included."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "400px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "container",
+        "value": "84rem"
+      }
+    ],
+    "filters": [
+      {
+        "name": "graded",
+        "value": "saturate(0.22) sepia(0.32) contrast(1.14) brightness(0.97)",
+        "purpose": "One grade on every photograph on light ground so sourced images read as a single commissioned body of work."
+      },
+      {
+        "name": "night",
+        "value": "saturate(0.12) brightness(0.52) contrast(1.22)",
+        "purpose": "The hero photograph read as luminance only, so the navy tint layered over it supplies the entire hue. White headline type clears 10.95:1 over the result and the amber emphasis about 5.9:1; the vignette depth is what holds those numbers."
+      }
+    ],
+    "assetNotes": [
+      {
+        "name": "photography",
+        "value": "7 CC0 rasters in public/img/, each with embedded provenance; 3 placed (haram-hero, arafat, green-dome)",
+        "purpose": "Placeholders for the client's own trip photography. Not final assets. Replacements keep embedded provenance and their grade: graded on light ground, night under the hero's navy tint."
+      },
+      {
+        "name": "review-state",
+        "value": "KONTEN_MASIH_CONTOH in app/content.ts",
+        "purpose": "While true, the navy-950 notice band renders above the nav. Invented permit numbers and figures are regulated territory for an Indonesian PPIU; a review build must not be mistaken for a live one."
+      }
+    ],
+    "shapes": [
+      {
+        "name": "arch",
+        "value": "border-radius: 50% 50% 1.75rem 1.75rem / 30% 30% 1.75rem 1.75rem",
+        "purpose": "The wide mihrab profile, drawn from elliptical radii (the traced polygon faceted its curve at large sizes). Currently defined but unused; needs overflow:hidden on its container."
+      },
+      {
+        "name": "arch-sm",
+        "value": "border-radius: 50% 50% 1.5rem 1.5rem / 32% 32% 1.5rem 1.5rem",
+        "purpose": "The portrait (4/5) mihrab profile: the Tentang photograph and the pembimbing portrait plate. Needs overflow:hidden on its container."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Hero Dark Field",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The first viewport: a full-bleed navy-950 band carrying one photograph reduced to luminance by the night filter, tinted by a navy-700 mix-blend-color layer, then a radial vignette, top/bottom gradients, and a curtain that rests at opacity 0 and only lifts on arrival.",
+      "html": "<section class=\"ds-hero\"><div class=\"ds-hero__img\"></div><div class=\"ds-hero__tint\"></div><div class=\"ds-hero__vignette\"></div><div class=\"ds-hero__top\"></div><div class=\"ds-hero__bottom\"></div><div class=\"ds-hero__curtain\"></div><div class=\"ds-hero__isi\"><h1 class=\"ds-hero__h\">Berangkat bersama <em>pembimbing</em> yang tidak meninggalkan Anda.</h1><p class=\"ds-hero__p\">Izin resmi Kemenag, pembimbing tetap dari manasik sampai pulang.</p></div></section>",
+      "css": ".ds-hero { position:relative; overflow:hidden; background:var(--color-navy-950,#071429); padding:3.5rem 2rem 7rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-hero__img { position:absolute; inset:0; background:linear-gradient(160deg,#6b6f78,#9a927f 50%,#3c4655); filter:saturate(0.12) brightness(0.52) contrast(1.22); } .ds-hero__tint { position:absolute; inset:0; background:var(--color-navy-700,#1b4285); opacity:0.7; mix-blend-mode:color; } .ds-hero__vignette { position:absolute; inset:0; background:radial-gradient(72rem 48rem at 50% 34%, rgba(7,20,41,0.58), rgba(7,20,41,0.90) 74%); } .ds-hero__top { position:absolute; left:0; right:0; top:0; height:10rem; background:linear-gradient(to bottom, #071429, transparent); } .ds-hero__bottom { position:absolute; left:0; right:0; bottom:0; height:14rem; background:linear-gradient(to top, #071429, transparent); } .ds-hero__curtain { position:absolute; inset:0; background:#071429; opacity:0; pointer-events:none; } @media (prefers-reduced-motion: no-preference) { .ds-hero__curtain { animation:ds-curtain 1.25s cubic-bezier(0.16,1,0.3,1) both; } .ds-hero__h em { animation:ds-land 0.62s cubic-bezier(0.16,1,0.3,1) 0.3s both; } } @keyframes ds-curtain { from { opacity:1; } to { opacity:0; } } @keyframes ds-land { from { opacity:0; transform:translateY(0.5rem) scale(0.97); } to { opacity:1; transform:none; } } .ds-hero__isi { position:relative; max-width:44rem; margin:0 auto; text-align:center; } .ds-hero__h { margin:0; font-size:clamp(2.5rem,6.6vw,5rem); line-height:1.03; letter-spacing:-0.03em; font-weight:400; color:#fff; } .ds-hero__h em { display:inline-block; font-style:normal; font-weight:800; color:var(--color-amber-500,#fbb117); } .ds-hero__p { margin:1.75rem auto 0; max-width:44rem; font-size:clamp(1rem,1.5vw,1.1875rem); line-height:1.65; color:var(--color-navy-100,#dde6f2); }"
+    },
+    {
+      "name": "Primary Pill (Amber)",
+      "kind": "button",
+      "refersTo": "pill-amber",
+      "description": "The page's one action shape: an amber pill carrying its own circular arrow badge. Used for every WhatsApp action on light ground.",
+      "html": "<a class=\"ds-pill-amber\" href=\"#\"><span>Hubungi Kami</span><span class=\"ds-pill-amber__badge\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7\"/><path d=\"M8 7h9v9\"/></svg></span></a>",
+      "css": ".ds-pill-amber { display:inline-flex; align-items:center; gap:0.75rem; height:3.25rem; padding:0 0.5rem 0 1.5rem; border-radius:999px; background:var(--color-amber-500,#fbb117); color:var(--color-navy-900,#0b2044); font-family:Figtree,ui-sans-serif,system-ui,sans-serif; font-size:0.9375rem; font-weight:600; text-decoration:none; box-shadow:0 1px 2px rgb(18 49 99 / 0.04), 0 12px 28px -12px rgb(18 49 99 / 0.16); transition:background-color 200ms; } .ds-pill-amber__badge { display:grid; place-items:center; width:2.375rem; height:2.375rem; border-radius:999px; background:var(--color-navy-800,#123163); color:var(--color-amber-500,#fbb117); transition:transform 300ms cubic-bezier(0.16,1,0.3,1); } .ds-pill-amber:hover { background:var(--color-amber-400,#fdc44c); } .ds-pill-amber:hover .ds-pill-amber__badge { transform:rotate(45deg); } .ds-pill-amber:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; } .ds-pill-amber { transition:transform 120ms cubic-bezier(0.16,1,0.3,1), background-color 200ms, border-color 200ms, color 200ms; } .ds-pill-amber:active { transform:scale(0.975); }"
+    },
+    {
+      "name": "Secondary Pill (Navy)",
+      "kind": "button",
+      "refersTo": "pill-navy",
+      "description": "The navy counterpart, used where amber would be a second action on the same surface. Its badge carries the amber arrow.",
+      "html": "<a class=\"ds-pill-navy\" href=\"#\"><span>Lihat Paket</span><span class=\"ds-pill-navy__badge\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7\"/><path d=\"M8 7h9v9\"/></svg></span></a>",
+      "css": ".ds-pill-navy { display:inline-flex; align-items:center; gap:0.75rem; height:3.25rem; padding:0 0.5rem 0 1.5rem; border-radius:999px; background:var(--color-navy-800,#123163); color:#fff; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; font-size:0.9375rem; font-weight:600; text-decoration:none; box-shadow:0 1px 2px rgb(18 49 99 / 0.04), 0 12px 28px -12px rgb(18 49 99 / 0.16); transition:background-color 200ms; } .ds-pill-navy__badge { display:grid; place-items:center; width:2.375rem; height:2.375rem; border-radius:999px; background:var(--color-amber-500,#fbb117); color:var(--color-navy-900,#0b2044); transition:transform 300ms cubic-bezier(0.16,1,0.3,1); } .ds-pill-navy:hover { background:var(--color-navy-700,#1b4285); } .ds-pill-navy:hover .ds-pill-navy__badge { transform:rotate(45deg); } .ds-pill-navy:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; } .ds-pill-navy { transition:transform 120ms cubic-bezier(0.16,1,0.3,1), background-color 200ms, border-color 200ms, color 200ms; } .ds-pill-navy:active { transform:scale(0.975); }"
+    },
+    {
+      "name": "Ghost Pill",
+      "kind": "button",
+      "refersTo": "pill-outline",
+      "description": "The hairline-outline variant for the secondary action beside a filled pill on light ground.",
+      "html": "<a class=\"ds-pill-ghost\" href=\"#\"><span>Lihat Paket</span><span class=\"ds-pill-ghost__badge\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7\"/><path d=\"M8 7h9v9\"/></svg></span></a>",
+      "css": ".ds-pill-ghost { display:inline-flex; align-items:center; gap:0.875rem; height:3.75rem; padding:0 0.625rem 0 1.75rem; border-radius:999px; border:1px solid rgb(18 49 99 / 0.25); background:transparent; color:var(--color-navy-800,#123163); font-family:Figtree,ui-sans-serif,system-ui,sans-serif; font-size:1rem; font-weight:600; text-decoration:none; transition:border-color 200ms, background-color 200ms; } .ds-pill-ghost__badge { display:grid; place-items:center; width:2.75rem; height:2.75rem; border-radius:999px; background:rgb(18 49 99 / 0.08); color:var(--color-navy-800,#123163); transition:transform 300ms cubic-bezier(0.16,1,0.3,1); } .ds-pill-ghost:hover { border-color:rgb(18 49 99 / 0.5); background:rgb(18 49 99 / 0.04); } .ds-pill-ghost:hover .ds-pill-ghost__badge { transform:rotate(45deg); } .ds-pill-ghost:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; } .ds-pill-ghost { transition:transform 120ms cubic-bezier(0.16,1,0.3,1), background-color 200ms, border-color 200ms, color 200ms; } .ds-pill-ghost:active { transform:scale(0.975); }"
+    },
+    {
+      "name": "Package Tabs",
+      "kind": "chip",
+      "refersTo": null,
+      "description": "Two equal-width tabs in a hairline pill rail, with one navy indicator pill translating between them. Equal widths are deliberate: the move is a pure translate and the indicator's radius never distorts.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><span class=\"ds-tabs__ind\" aria-hidden=\"true\"></span><button role=\"tab\" aria-selected=\"true\" class=\"ds-tabs__tab is-on\">Paket Umrah</button><button role=\"tab\" aria-selected=\"false\" class=\"ds-tabs__tab\">Haji Khusus</button></div>",
+      "css": ".ds-tabs { position:relative; display:inline-flex; width:16rem; border-radius:999px; border:1px solid rgb(18 49 99 / 0.12); background:rgb(255 255 255 / 0.7); padding:0.375rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-tabs__ind { position:absolute; top:0.375rem; bottom:0.375rem; left:0.375rem; width:calc(50% - 0.375rem); border-radius:999px; background:var(--color-navy-800,#123163); transform:translateX(0%); transition:transform 300ms cubic-bezier(0.16,1,0.3,1); } @media (prefers-reduced-motion: reduce) { .ds-tabs__ind { transition:none; } } .ds-tabs__tab { position:relative; z-index:1; width:50%; border:0; background:none; cursor:pointer; border-radius:999px; padding:0.625rem 1.25rem; font-family:inherit; font-size:0.9375rem; font-weight:700; color:var(--color-ink,#3f4b63); transition:color 300ms; } .ds-tabs__tab.is-on { color:#fff; } .ds-tabs__tab:hover { color:var(--color-navy-800,#123163); } .ds-tabs__tab:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; }"
+    },
+    {
+      "name": "Package Card",
+      "kind": "card",
+      "refersTo": "card-light",
+      "description": "A white 2rem-cornered plate with a hairline navy border, a tabular price figure, and a ghost WhatsApp action. No shadow at rest.",
+      "html": "<article class=\"ds-card-paket\"><h3>Umrah Reguler</h3><p class=\"ds-card-paket__lede\">Sembilan hari, pembimbing tetap dari manasik sampai pulang.</p><p class=\"ds-card-paket__harga\"><span class=\"ds-card-paket__rp\">Rp</span><span class=\"ds-card-paket__angka\">28.900.000</span></p><p class=\"ds-card-paket__nota\">per jamaah, sudah termasuk perlengkapan</p><a class=\"ds-card-paket__aksi\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.3-.2.5-.1l2 .9c.2.1.4.2.4.3.1.2.1.7 0 1.4Z\"/></svg>Tanya paket ini</a></article>",
+      "css": ".ds-card-paket { display:flex; flex-direction:column; border-radius:2rem; border:1px solid rgb(18 49 99 / 0.12); background:#fff; padding:1.75rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-card-paket h3 { margin:0; font-size:1.375rem; font-weight:800; letter-spacing:-0.03em; color:var(--color-navy-800,#123163); } .ds-card-paket__lede { margin:0.75rem 0 0; font-size:0.9375rem; line-height:1.6; color:var(--color-ink,#3f4b63); } .ds-card-paket__harga { display:flex; align-items:baseline; gap:0.375rem; margin:1.75rem 0 0; } .ds-card-paket__rp { font-size:0.9375rem; font-weight:600; color:var(--color-ink-soft,#5e6b85); } .ds-card-paket__angka { font-variant-numeric:tabular-nums; font-feature-settings:'tnum'; font-size:2.75rem; font-weight:800; line-height:1; letter-spacing:-0.045em; color:var(--color-navy-800,#123163); } .ds-card-paket__nota { margin:0.375rem 0 0; font-size:0.8125rem; color:var(--color-ink-soft,#5e6b85); } .ds-card-paket__aksi { display:flex; align-items:center; justify-content:center; gap:0.625rem; height:3.25rem; margin-top:2rem; border-radius:1rem; border:1px solid rgb(18 49 99 / 0.25); color:var(--color-navy-800,#123163); font-size:0.9375rem; font-weight:700; text-decoration:none; transition:background-color 200ms, color 200ms, border-color 200ms; } .ds-card-paket__aksi:hover { background:var(--color-navy-800,#123163); border-color:var(--color-navy-800,#123163); color:#fff; } .ds-card-paket__aksi:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; }"
+    },
+    {
+      "name": "Highlighted Package Card",
+      "kind": "card",
+      "refersTo": "card-navy",
+      "description": "The one navy plate in a set of three, lifted by the float shadow, with an amber action and a white status badge beside its title.",
+      "html": "<article class=\"ds-card-sorot\"><div class=\"ds-card-sorot__kepala\"><h3>Umrah Plus Thaif</h3><span class=\"ds-card-sorot__badge\">Terbanyak dipilih</span></div><p class=\"ds-card-sorot__lede\">Dua belas hari, hotel di ring satu Masjidil Haram.</p><p class=\"ds-card-sorot__harga\"><span class=\"ds-card-sorot__rp\">Rp</span><span class=\"ds-card-sorot__angka\">36.500.000</span></p><a class=\"ds-card-sorot__aksi\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.5-.1l.7-.9c.2-.2.3-.2.5-.1l2 .9c.2.1.4.2.4.3.1.2.1.7 0 1.4Z\"/></svg>Tanya paket ini</a></article>",
+      "css": ".ds-card-sorot { display:flex; flex-direction:column; border-radius:2rem; background:var(--color-navy-800,#123163); padding:1.75rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; box-shadow:0 2px 4px rgb(18 49 99 / 0.05), 0 28px 60px -24px rgb(18 49 99 / 0.28); } .ds-card-sorot__kepala { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; } .ds-card-sorot h3 { margin:0; font-size:1.375rem; font-weight:800; letter-spacing:-0.03em; color:#fff; } .ds-card-sorot__badge { flex-shrink:0; border-radius:999px; background:#fff; padding:0.25rem 0.75rem; font-size:0.6875rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-navy-800,#123163); } .ds-card-sorot__lede { margin:0.75rem 0 0; font-size:0.9375rem; line-height:1.6; color:var(--color-navy-100,#dde6f2); } .ds-card-sorot__harga { display:flex; align-items:baseline; gap:0.375rem; margin:1.75rem 0 0; } .ds-card-sorot__rp { font-size:0.9375rem; font-weight:600; color:var(--color-navy-200,#c2d1e6); } .ds-card-sorot__angka { font-variant-numeric:tabular-nums; font-feature-settings:'tnum'; font-size:2.75rem; font-weight:800; line-height:1; letter-spacing:-0.045em; color:#fff; } .ds-card-sorot__aksi { display:flex; align-items:center; justify-content:center; gap:0.625rem; height:3.25rem; margin-top:2rem; border-radius:1rem; background:var(--color-amber-500,#fbb117); color:var(--color-navy-900,#0b2044); font-size:0.9375rem; font-weight:700; text-decoration:none; transition:background-color 200ms; } .ds-card-sorot__aksi:hover { background:var(--color-amber-400,#fdc44c); } .ds-card-sorot__aksi:focus-visible { outline:2px solid var(--color-amber-500,#fbb117); outline-offset:3px; }"
+    },
+    {
+      "name": "Guided Select Field",
+      "kind": "input",
+      "refersTo": "select-field",
+      "description": "The Pandu plate's field: an uppercase label with a navy icon over a recessed 1rem-cornered select with its own chevron.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field__label\" for=\"ds-field-bulan\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"3\"/><path d=\"M8 3v4M16 3v4M3 10h18\"/></svg>Rencana berangkat</label><div class=\"ds-field__wrap\"><select class=\"ds-field__select\" id=\"ds-field-bulan\"><option>Maret 2026</option><option>April 2026</option></select><svg class=\"ds-field__chev\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 9 6 6 6-6\"/></svg></div></div>",
+      "css": ".ds-field { display:flex; flex-direction:column; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-field__label { display:flex; align-items:center; gap:0.375rem; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-ink-soft,#5e6b85); } .ds-field__label svg { color:var(--color-navy-600,#2a57a0); } .ds-field__wrap { position:relative; margin-top:0.5rem; } .ds-field__select { appearance:none; width:100%; height:3.25rem; padding:0 2.75rem 0 1rem; border-radius:1rem; border:1px solid rgb(18 49 99 / 0.14); background:rgb(242 241 238 / 0.6); color:var(--color-navy-800,#123163); font-family:inherit; font-size:0.9375rem; font-weight:600; cursor:pointer; transition:border-color 200ms; } .ds-field__select:hover { border-color:rgb(18 49 99 / 0.3); } .ds-field__select:focus-visible { border-color:var(--color-navy-700,#1b4285); outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; } .ds-field__chev { position:absolute; right:1rem; top:50%; transform:translateY(-50%); pointer-events:none; color:var(--color-navy-600,#2a57a0); }"
+    },
+    {
+      "name": "Inline WhatsApp Button",
+      "kind": "button",
+      "refersTo": "wa-button-inline",
+      "description": "The 1rem-cornered action used inside plates and cards, 3.25rem tall: amber on the Pandu plate and on navy cards, ghost-navy on light cards. Its glyph scales to 1.1 on hover and the whole button presses to 0.975 on tap.",
+      "html": "<a class=\"ds-wa press\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35Z\"/><path d=\"M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.22-3.74.99 1-3.65-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89Zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42Z\"/></svg>Mulai chat</a>",
+      "css": ".ds-wa { display:inline-flex; align-items:center; justify-content:center; gap:0.625rem; height:3.25rem; padding:0 1.5rem; border-radius:1rem; background:var(--color-amber-500,#fbb117); color:var(--color-navy-900,#0b2044); font-family:Figtree,ui-sans-serif,system-ui,sans-serif; font-size:0.9375rem; font-weight:700; text-decoration:none; box-shadow:0 1px 2px rgb(18 49 99 / 0.04), 0 12px 28px -12px rgb(18 49 99 / 0.16); transition:background-color 200ms, transform 120ms cubic-bezier(0.16,1,0.3,1); } .ds-wa:hover { background:var(--color-amber-400,#fdc44c); } .ds-wa:active { transform:scale(0.975); } .ds-wa svg { transition:transform 300ms cubic-bezier(0.16,1,0.3,1); } .ds-wa:hover svg { transform:scale(1.1); } .ds-wa:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; border-radius:4px; }"
+    },
+    {
+      "name": "Sticky Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The tone-aware header. It watches a #hero-end sentinel with an IntersectionObserver: over the hero it is navy-950 with white type and a light lockup; past it, 85% paper with a heavy blur, a 10% navy hairline and navy type.",
+      "html": "<div class=\"ds-nav-stack\"><header class=\"ds-nav ds-nav--hero\"><a class=\"ds-nav__lockup\" href=\"#\"><svg viewBox=\"0 0 64 64\" width=\"36\" height=\"36\" role=\"img\" aria-label=\"Aljamtour\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#123163\"/><g fill=\"#fbb117\"><rect x=\"22.5\" y=\"28.7\" width=\"4.6\" height=\"16.8\"/><rect x=\"29.9\" y=\"22.4\" width=\"4.6\" height=\"23.1\"/><path d=\"M37.3 15.4h4.6v27.5c0 3.6-2.4 6.4-6 6.4h-1.3v-4.6h1.1c1.2 0 2-.9 2-2Z\"/></g></svg><span class=\"ds-nav__wordmark\">Aljamtour<span class=\"ds-nav__desc\">Umrah &amp; Haji Khusus</span></span></a><nav class=\"ds-nav__links\"><a href=\"#\">Tentang</a><a href=\"#\">Paket</a><a href=\"#\">Alur</a><a href=\"#\">Tanya Jawab</a></nav></header><header class=\"ds-nav ds-nav--page\"><a class=\"ds-nav__lockup\" href=\"#\"><svg viewBox=\"0 0 64 64\" width=\"36\" height=\"36\" role=\"img\" aria-label=\"Aljamtour\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#123163\"/><g fill=\"#fbb117\"><rect x=\"22.5\" y=\"28.7\" width=\"4.6\" height=\"16.8\"/><rect x=\"29.9\" y=\"22.4\" width=\"4.6\" height=\"23.1\"/><path d=\"M37.3 15.4h4.6v27.5c0 3.6-2.4 6.4-6 6.4h-1.3v-4.6h1.1c1.2 0 2-.9 2-2Z\"/></g></svg><span class=\"ds-nav__wordmark\">Aljamtour<span class=\"ds-nav__desc\">Umrah &amp; Haji Khusus</span></span></a><nav class=\"ds-nav__links\"><a href=\"#\">Tentang</a><a href=\"#\">Paket</a><a href=\"#\">Alur</a><a href=\"#\">Tanya Jawab</a></nav></header></div>",
+      "css": ".ds-nav-stack { display:flex; flex-direction:column; gap:1rem; } .ds-nav { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; height:5rem; padding:0 2rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; transition:background-color 300ms cubic-bezier(0.16,1,0.3,1), color 300ms; } .ds-nav--hero { background:var(--color-navy-950,#071429); border-bottom:1px solid transparent; } .ds-nav--page { background:rgb(242 241 238 / 0.85); backdrop-filter:blur(24px); border-bottom:1px solid rgb(18 49 99 / 0.1); } .ds-nav__lockup { display:inline-flex; align-items:center; gap:0.625rem; text-decoration:none; } .ds-nav__wordmark { display:flex; flex-direction:column; line-height:1; font-size:1.0625rem; font-weight:800; letter-spacing:-0.035em; } .ds-nav--page .ds-nav__wordmark { color:var(--color-navy-800,#123163); } .ds-nav--hero .ds-nav__wordmark { color:#fff; } .ds-nav__desc { margin-top:0.25rem; font-size:0.625rem; font-weight:600; text-transform:uppercase; letter-spacing:0.16em; } .ds-nav--page .ds-nav__desc { color:var(--color-ink-soft,#5e6b85); } .ds-nav--hero .ds-nav__desc { color:var(--color-navy-200,#c2d1e6); } .ds-nav__links { display:flex; align-items:center; gap:0.25rem; } .ds-nav__links a { padding:0.5rem 0.875rem; border-radius:999px; font-size:0.9375rem; font-weight:500; text-decoration:none; transition:background-color 200ms, color 200ms; } .ds-nav--page .ds-nav__links a { color:var(--color-ink,#3f4b63); } .ds-nav--page .ds-nav__links a:hover { background:rgb(18 49 99 / 0.06); color:var(--color-navy-800,#123163); } .ds-nav--hero .ds-nav__links a { color:var(--color-navy-100,#dde6f2); } .ds-nav--hero .ds-nav__links a:hover { background:rgb(255 255 255 / 0.1); color:#fff; } .ds-nav__links a:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; border-radius:4px; } .ds-nav--hero .ds-nav__links a:focus-visible { outline-color:var(--color-amber-500,#fbb117); }"
+    },
+    {
+      "name": "Bar Rule (section marker)",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The mark's three ascending navy bars opening every section, followed by a hairline that fades out rather than spanning the page.",
+      "html": "<div class=\"ds-barrule\"><svg viewBox=\"0 0 34 24\" width=\"34\" height=\"24\" aria-hidden=\"true\"><rect x=\"0\" y=\"13\" width=\"5.8\" height=\"11\" fill=\"currentColor\"/><rect x=\"10\" y=\"6.5\" width=\"5.8\" height=\"17.5\" fill=\"currentColor\"/><rect x=\"20\" y=\"0\" width=\"5.8\" height=\"24\" fill=\"currentColor\"/></svg><span class=\"ds-barrule__fade\"></span></div>",
+      "css": ".ds-barrule { display:flex; align-items:flex-end; gap:1.25rem; color:rgb(18 49 99 / 0.4); } .ds-barrule__fade { height:1px; flex:1; transform:translateY(-1px); background:linear-gradient(to right, rgba(18,49,99,0.22), transparent); }"
+    },
+    {
+      "name": "Journey Step",
+      "kind": "custom",
+      "refersTo": "step-marker",
+      "description": "One rung of the numbered journey rail: a navy square marker with a tabular white numeral over a plain hairline navy spine that draws itself on a view timeline as the reader passes it.",
+      "html": "<li class=\"ds-step\"><div class=\"ds-step__rail\"><span class=\"ds-step__num\">3</span><span class=\"ds-step__run\"><span class=\"ds-step__draw\"></span></span></div><div class=\"ds-step__isi\"><h3>Pelunasan dan manasik</h3><p>Setiap pembayaran masuk ke rekening perusahaan, bukan rekening pribadi.</p></div></li>",
+      "css": ".ds-step { display:flex; gap:2rem; list-style:none; padding-bottom:2.5rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-step__rail { display:flex; flex-direction:column; align-items:center; width:3rem; flex-shrink:0; } .ds-step__num { display:grid; place-items:center; width:3rem; height:3rem; flex-shrink:0; border-radius:1rem; background:var(--color-navy-800,#123163); color:#fff; font-size:1.0625rem; font-weight:800; font-variant-numeric:tabular-nums; } .ds-step__run { display:flex; justify-content:center; width:0.125rem; flex:1; min-height:3rem; margin-top:0.75rem; } .ds-step__draw { width:100%; height:100%; border-radius:999px; background:rgb(18 49 99 / 0.15); transform-origin:top; } @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { .ds-step__draw { animation:ds-rail-draw linear both; animation-timeline:view(); animation-range:entry 30% cover 55%; } } } @keyframes ds-rail-draw { from { transform:scaleY(0); } to { transform:scaleY(1); } } .ds-step__isi h3 { margin:0.375rem 0 0; font-size:1.25rem; font-weight:800; letter-spacing:-0.03em; color:var(--color-navy-800,#123163); } .ds-step__isi p { margin:0.625rem 0 0; font-size:1rem; line-height:1.68; color:var(--color-ink,#3f4b63); }"
+    },
+    {
+      "name": "FAQ Disclosure",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "A native disclosure row on hairline navy rules; its toggle is the one place amber marks an open state on light ground. Where the browser supports interpolate-size, the content opens instead of snapping.",
+      "html": "<details class=\"ds-faq\"><summary>Apakah biaya bisa dicicil?</summary><p>Bisa. Tidak ada biaya yang keluar sebelum langkah kedua.</p></details>",
+      "css": ".ds-faq { border-top:1px solid rgb(18 49 99 / 0.12); border-bottom:1px solid rgb(18 49 99 / 0.12); font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-faq summary { display:flex; align-items:flex-start; justify-content:space-between; gap:1.5rem; padding:1.5rem 0; list-style:none; cursor:pointer; font-size:1.0625rem; font-weight:700; color:var(--color-navy-800,#123163); transition:color 200ms; } .ds-faq summary::-webkit-details-marker { display:none; } .ds-faq summary::after { content:''; flex-shrink:0; width:2rem; height:2rem; margin-top:0.125rem; border-radius:999px; border:1px solid rgb(18 49 99 / 0.2); background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231b4285' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E\") center / 1.125rem no-repeat; transition:transform 300ms cubic-bezier(0.16,1,0.3,1), background-color 200ms, border-color 200ms; } .ds-faq summary:hover { color:var(--color-navy-600,#2a57a0); } .ds-faq[open] summary::after { transform:rotate(180deg); border-color:var(--color-navy-800,#123163); background-color:var(--color-navy-800,#123163); background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fbb117' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E\"); } .ds-faq p { max-width:62ch; margin:0; padding-bottom:1.75rem; font-size:1rem; line-height:1.7; color:var(--color-ink,#3f4b63); } .ds-faq summary:focus-visible { outline:2px solid var(--color-navy-700,#1b4285); outline-offset:3px; } @supports (interpolate-size: allow-keywords) { @media (prefers-reduced-motion: no-preference) { :host, :root { interpolate-size:allow-keywords; } .ds-faq::details-content { block-size:0; overflow:clip; transition:block-size 0.34s cubic-bezier(0.16,1,0.3,1), content-visibility 0.34s allow-discrete; } .ds-faq[open]::details-content { block-size:auto; } } }"
+    },
+    {
+      "name": "Arched Photo Block (arch-sm)",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The signature silhouette: a 4/5 portrait photograph under the page's single grade, shaped by elliptical radii rather than a clip, with a caption beneath it. The container must carry overflow:hidden.",
+      "html": "<figure class=\"ds-arch\"><div class=\"ds-arch__frame\"><div class=\"ds-arch__img\"></div></div><figcaption class=\"ds-arch__cap\">Jabal Rahmah, Arafah.</figcaption></figure>",
+      "css": ".ds-arch { margin:0; width:16rem; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-arch__frame { position:relative; aspect-ratio:4/5; width:100%; overflow:hidden; background:var(--color-navy-900,#0b2044); border-radius:50% 50% 1.5rem 1.5rem / 32% 32% 1.5rem 1.5rem; } .ds-arch__img { position:absolute; inset:0; background:linear-gradient(140deg,#5a6472,#8d8577 55%,#43505f); filter:saturate(0.22) sepia(0.32) contrast(1.14) brightness(0.97); } .ds-arch__cap { margin-top:0.75rem; font-size:0.75rem; color:var(--color-ink-soft,#5e6b85); }"
+    },
+    {
+      "name": "Notice Band",
+      "kind": "custom",
+      "refersTo": "notice-band",
+      "description": "A full-width navy-950 strip above the nav, rendered only while KONTEN_MASIH_CONTOH is true: prices, testimonials and contacts are still placeholders, and a review build must not be mistaken for a live one.",
+      "html": "<div class=\"ds-notice\"><p><strong>Pratinjau desain.</strong> Nomor izin dan badan hukum sudah resmi. Harga, testimoni, dan kontak masih contoh &mdash; belum boleh ditayangkan.</p></div>",
+      "css": ".ds-notice { background:var(--color-navy-950,#071429); padding:0.625rem 1.25rem; text-align:center; font-family:Figtree,ui-sans-serif,system-ui,sans-serif; } .ds-notice p { max-width:70rem; margin:0 auto; font-size:0.8125rem; line-height:1.6; color:var(--color-navy-200,#c2d1e6); } .ds-notice strong { color:#fff; font-weight:700; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Mihrab Window",
+    "overview": "The page opens on a navy night and then walks out into daylight. The first viewport is a full-bleed navy-950 field: one photograph of the haram drained to luminance, tinted back to the brand's own blue, and sunk under a vignette until only the type and the two pills carry light. Everything below it is a calm, light editorial field — warm neutral ground, white plates, navy bands for rhythm — where the only thing that breaks the rectangles is an arch drawn from a mihrab profile, through which the page's portrait photographs are seen. The world is quiet on purpose: its audience is jamaah aged 45–70 and their adult children comparing agencies, and it deliberately refuses the Indonesian umrah-agency default of rotating banner carousels, walls of badge GIFs, and price tables shouting above the fold. Legitimacy is shown — a checkable permit number, a named pembimbing, photographs of real ground — not asserted in loud type.\n\nDensity is generous rather than packed. Sections breathe at a 7rem/10rem rhythm inside an 84rem container, plates carry 1.75–2rem of internal padding, and text measures cap around 46rem or 62ch. Navy does the structural work: it is the ink, the dark field, the rule tint at 10–15% opacity, and the marker colour. Amber appears rarely and only where a hand is meant to move, with one measured exception in the hero headline.\n\nThe identity device is borrowed straight from the company mark: three bars ascending left to right, with the tallest carrying the J's hook. That rhythm reappears in exactly two places on the page — the section marker that opens every section, and the logo lockup itself — always in navy on light ground, never in the action colour, so it never competes with a call to action. One typeface, Figtree, carries the whole page on weight contrast alone (400 against 800), the same move the mark makes when three bars of one shape climb in height.",
+    "keyCharacteristics": [
+      "A navy-950 night as the first viewport, resolving into a warm light-neutral ground (#f2f1ee) with white plates and navy bands below it",
+      "Amber as the action colour, spent on a countable set of sites, plus one emphasis word in the hero headline",
+      "One mihrab arch, drawn from elliptical radii, as the only non-rectangular silhouette",
+      "One family, two weights (400/800) as the only display device; tabular numerals on every figure",
+      "The whole page arrives on scroll, with each section's reveal derived from what that section is; plus one authored hero arrival and one press feedback",
+      "Photographs carry one shared grade (`graded`) on light ground and the luminance-only `night` grade on the dark field"
+    ],
+    "rules": [
+      {
+        "name": "The Action-Only Amber Rule",
+        "body": "Amber marks the places a hand is meant to move. On the light ground it may fill a shape but must never set type — it measures 1.6:1 against the page ground. On navy it clears 6.93:1 and may do both. The shipped page spends it as a fill on the primary pill, the Pandu button, the floating WhatsApp action and the open FAQ toggle, and as type only on navy: the footer WhatsApp link, the drawer link hover, and one emphasised word in the hero headline (about 5.9:1 against the brightest pixel behind it). That last one is the system's single emphasis use of the action colour, and it is allowed because the dark field measures. A new amber site needs a reason and a measurement, not a taste.",
+        "section": "colors"
+      },
+      {
+        "name": "The Navy Voice Rule",
+        "body": "On a navy field, small-caps labels, quote marks, step numerals, figures, and icons take `{colors.navy-100}`, `{colors.navy-200}`, `{colors.navy-300}`, or white — never amber. Amber on navy is reserved for the action and for the one headline emphasis, so decorating with it there costs the page its signal.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed-Ground Rule",
+        "body": "Every text/ground pair in the page clears WCAG AA: body ink at 7.75:1, headings at 11.3:1, quiet ink at 4.75:1, the amber fill with its navy label at 8.74:1, amber on navy at 6.93:1, and the hero's white headline at 10.95:1 against the brightest background pixel in its band. Those hero numbers are held by the vignette and the two gradient scrims, not by the photograph: lightening the radial overlay (currently `rgba(7,20,41,0.58)` at centre to `rgba(7,20,41,0.90)` at 74%) or reducing the navy tint layer breaks them. A new pair earns its place by measuring, not by looking close enough.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family, Two Weights Rule",
+        "body": "Figtree at 400 and 800 is the entire display system. Hierarchy comes from weight and size, never from a second family, an italic, a colour accent inside a heading (the hero's amber word excepted, and it is one word), or all-caps above 0.75rem.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figure Rule",
+        "body": "Every number a visitor might compare against another number — prices, durations, counts, years, permit numbers — carries `.tnum`. Figures read in columns across cards and tables; proportional digits make them wobble.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence-First Rule",
+        "body": "A heading starts with its sentence. No kicker, eyebrow, or category chip sits above it; proof lines sit *under* the action instead, where they confirm rather than delay.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Shadows Rule",
+        "body": "There are two shadows and no third. A surface that is not overlapping another surface gets a hairline border, not a new shadow. Both shadows are tinted with the navy ink; a neutral grey or black shadow does not belong on this ground.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Arch Rule",
+        "body": "The arch is the only non-rectangular silhouette on the page, and it exists in exactly two variants, both built from radii. A new curved mask, a circular photo crop, or a second decorative shape dilutes it to nothing.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Navy Bars Rule",
+        "body": "The three ascending bars render in navy wherever they appear as a page device — the section marker and the lockup on light ground — precisely so they do not compete with the action colour. They are amber only inside the logo mark itself, on the mark's own navy field, and white/pale-navy when the lockup or marker sits on a navy field. The J hook belongs to the mark and appears nowhere else on the page.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Visible-By-Default Rule",
+        "body": "Every animation is wrapped in `prefers-reduced-motion: no-preference` (press feedback excepted, deliberately) and uses `animation-fill-mode: both` on content already in the document. **Every animated element's CSS resting value must equal its final state**, set outside the reduced-motion query. The curtain is the case that proves it: `.anim-curtain` carries `opacity: 0` at rest, and an earlier draft that left it at the default opacity 1 hid the hero photograph entirely whenever motion was reduced. The scroll reveals apply the same principle to a script instead of a media query: nothing is hidden until `Reveal.tsx` has confirmed it is running and can put every element back. It pays a third time in evidence: full-page captures switch these animations off before shooting, because a viewport as tall as the document never completes a `cover` range — safe only because the resting state is the final state. Re-verified: 54 animated elements tracked, 0 hidden, 0 animations running, the rail fully drawn, `.sr-js` not applied, press feedback still active.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** spend amber where a hand is meant to move; on light ground it may fill a shape only — it measures 1.6:1 against `{colors.ground}` and cannot set type there.",
+      "**Do** set labels, numerals, quote marks, and icons on navy in `{colors.navy-100}`, `{colors.navy-200}`, `{colors.navy-300}`, or white.",
+      "**Do** render the three ascending bars in navy when they act as a page device; they are amber only inside the logo mark.",
+      "**Do** keep the hero's vignette and gradient scrims at their shipped depth — they are what hold 10.95:1 for the white headline and about 5.9:1 for the amber word.",
+      "**Do** pair the `arch-sm` utility with clipping on its container — the shape is a radius now, not a clip, and an unclipped child will square the dome off — and reach for `overflow-clip` rather than `overflow-hidden` on any wrapper that carries or contains a scroll reveal.",
+      "**Do** put every photograph on light ground through `graded`, and any photograph used as a dark field through `night` under a navy tint layer, so sourced images read as one body of work.",
+      "**Do** build headings from a 400-weight sentence with one 800-weight span, in Figtree, at the established clamps.",
+      "**Do** put `.tnum` on every figure a visitor might compare against another figure.",
+      "**Do** pick a size from the role ladder rather than inventing one; a new size means a new role and needs an argument.",
+      "**Do** keep new motion inside `prefers-reduced-motion: no-preference`, and keep content visible without it — press feedback is the one deliberate exception, because it confirms a tap rather than decorating one.",
+      "**Do** keep embedded provenance on any raster that ships, including replacements."
+    ],
+    "donts": [
+      "**Don't** set amber type on the light ground, and don't add an amber site without a measurement behind it.",
+      "**Don't** put a kicker, eyebrow, or category chip above a heading — proof lines belong under the action, not ahead of the sentence.",
+      "**Don't** introduce a second typeface, an italic, or an all-caps heading above 0.75rem; weight contrast is the only display device.",
+      "**Don't** add a third shadow, a grey or black shadow, or a shadow on a surface that is not overlapping another surface.",
+      "**Don't** rebuild the arch as a clip-path or a plain `border-radius: 50%`, and don't add a second decorative silhouette or a circular photo crop.",
+      "**Don't** put the J hook anywhere outside the logo mark.",
+      "**Don't** give two sections the same reveal by default. The page reveals on scroll everywhere, and the discipline that keeps that from being wallpaper is that each reveal is derived from what its section is — reach for `.sr-wipe`, `.sr-unveil` or `.sr-come` when the section has its own logic, and `.sr` only when it does not.",
+      "**Don't** stagger with a time delay; stagger by shifting the scroll range (`.st1`–`.st4`), so a fast scroll never queues a backlog of late animations.",
+      "**Don't** let a revealed element grow taller than the viewport: a subject taller than the scrollport has a degenerate range and can never finish revealing. Re-run the check at 1440x900, 390x844 and 360x780 after changing any section's height — zero stuck below opacity 1 after a full scroll walk.",
+      "**Don't** put `overflow: hidden` on any wrapper that contains a scroll reveal; use `overflow: clip`. `hidden` makes the element a scroll container, so a `view()` timeline inside it resolves against that box instead of the document, the box never scrolls, and the reveal freezes at its starting value. This shipped as a real defect — one ledger row sat at opacity 0 permanently on mobile and at 360px. `clip` clips identically, border-radius included. It is invisible in code review and shows up only as missing content.",
+      "**Don't** ship an animated element whose resting CSS is not its final state — under reduced motion that resting value is the page.",
+      "**Don't** reintroduce the agency defaults this world refuses: rotating banner carousels, walls of badge graphics, or a price table above the fold."
+    ]
+  }
+}

@@ -1,26 +1,341 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------
+   Aljamtour — design tokens
+   Navy and amber are lifted from the company mark: the navy field and
+   the three ascending bars. Amber is an action colour only; on light
+   ground it may fill a shape but never set type (1.6:1 against the
+   page ground), while on navy it clears 6.9:1 and may do both.
+------------------------------------------------------------------- */
+@theme {
+  --color-navy-950: #071429;
+  --color-navy-900: #0b2044;
+  --color-navy-800: #123163;
+  --color-navy-700: #1b4285;
+  --color-navy-600: #2a57a0;
+  --color-navy-500: #3f6fbd;
+  --color-navy-300: #8ba6cf;
+  --color-navy-200: #c2d1e6;
+  --color-navy-100: #dde6f2;
+  --color-navy-50: #eef3f9;
+
+  --color-amber-600: #d9930a;
+  --color-amber-500: #fbb117;
+  --color-amber-400: #fdc44c;
+  --color-amber-200: #fde2a8;
+  --color-amber-100: #fef2d6;
+
+  --color-ground: #f2f1ee;
+  --color-ground-deep: #e8e6e1;
+  --color-surface: #ffffff;
+  --color-ink: #3f4b63;
+  --color-ink-soft: #5e6b85;
+
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1.5rem;
+  --radius-plate: 2rem;
+
+  --shadow-lift: 0 1px 2px rgb(18 49 99 / 0.04), 0 12px 28px -12px rgb(18 49 99 / 0.16);
+  --shadow-float: 0 2px 4px rgb(18 49 99 / 0.05), 0 28px 60px -24px rgb(18 49 99 / 0.28);
+
+  --ease-settle: cubic-bezier(0.16, 1, 0.3, 1);
+  /* Scroll-driven motion needs a gentler curve than a timed arrival.
+     A hard deceleration spends most of its change in the first few
+     pixels of scroll, so the element is already resting by the time it
+     clears the bottom edge. This one spreads the movement across the
+     range, which is what keeps it visible while the reader is reading. */
+  --ease-scroll: cubic-bezier(0.38, 0.02, 0.2, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ------------------------------------------------------------------
+   Base — layered, so element rules never outrank a utility class.
+   Unlayered CSS beats every Tailwind layer, which silently swallows
+   text-colour utilities on headings.
+------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
 
-@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    color: var(--color-navy-800);
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p { text-wrap: pretty; }
+
+  a { text-underline-offset: 0.22em; text-decoration-thickness: from-font; }
+
+  /* Browser surfaces — the parts we did not draw still carry the design. */
+  ::selection {
+    background: var(--color-amber-500);
+    color: var(--color-navy-900);
+  }
+
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    caret-color: var(--color-navy-700);
+    accent-color: var(--color-navy-700);
+    scrollbar-color: var(--color-navy-300) var(--color-ground-deep);
+    scrollbar-width: thin;
+    color-scheme: light;
+  }
+
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: var(--color-ground-deep); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-navy-300);
+    border: 3px solid var(--color-ground-deep);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-navy-600); }
+
+  :focus-visible {
+    outline: 2px solid var(--color-navy-700);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .on-navy :focus-visible { outline-color: var(--color-amber-500); }
+}
+
+/* Figures are read side by side across cards and tables. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* ------------------------------------------------------------------
+   The arch — the page's one recurring silhouette. Built from elliptical
+   corner radii rather than a traced polygon: the polygon faceted its
+   curve at large sizes and read as a blob rather than a dome.
+------------------------------------------------------------------- */
+@utility arch {
+  border-radius: 50% 50% 1.75rem 1.75rem / 30% 30% 1.75rem 1.75rem;
+}
+
+@utility arch-sm {
+  border-radius: 50% 50% 1.5rem 1.5rem / 32% 32% 1.5rem 1.5rem;
+}
+
+/* ------------------------------------------------------------------
+   Motion.
+
+   One authored arrival: the night lifts off the photograph while the
+   sentence lands, and the word the product is sold on arrives last.
+   Everything else is feedback or continuity. Every element's resting
+   state is its final state, so a failed script or an unsupported
+   timeline leaves the page whole rather than blank.
+------------------------------------------------------------------- */
+@keyframes settle {
+  from { opacity: 0; transform: translateY(1.25rem); filter: blur(10px); }
+  to { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* The curtain over the Haram, lifting. */
+@keyframes curtain {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* The photograph settling back from its held breath. */
+@keyframes hold-release {
+  from { transform: scale(1.06); }
+  to { transform: none; }
+}
+
+/* The product's own word, landing after the sentence it sits in. */
+@keyframes land {
+  from { opacity: 0; transform: translateY(0.5rem) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(0.5rem); }
+  to { opacity: 1; transform: none; }
+}
+
+/* The journey rail, traced as the reader travels it. */
+@keyframes rail-draw {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.rail {
+  transform-origin: top;
+}
+
+/* Resting states. Anything the arrival animates must already be in its
+   FINAL state here: with reduced motion, or with the stylesheet half
+   applied, no animation runs and these values are what ships. A curtain
+   that defaults to opaque hides the photograph it was meant to reveal. */
+.anim-curtain {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .anim { animation: settle 0.9s var(--ease-settle) both; }
+  .anim-curtain { animation: curtain 1.25s var(--ease-settle) both; }
+  .anim-hold { animation: hold-release 1.6s var(--ease-settle) both; }
+  .anim-land { animation: land 0.62s var(--ease-settle) 0.3s both; }
+  .panel-in { animation: panel-in 0.4s var(--ease-settle) both; }
+
+  .d1 { animation-delay: 0.05s; }
+  .d2 { animation-delay: 0.14s; }
+  .d3 { animation-delay: 0.23s; }
+  .d4 { animation-delay: 0.32s; }
+  .d5 { animation-delay: 0.44s; }
+  .d6 { animation-delay: 0.58s; }
+
+  /* Scroll is the meaning here, not the mechanism: the rail between two
+     steps fills exactly as that stretch of the journey passes. Browsers
+     without view timelines simply keep the drawn rail. */
+  @supports (animation-timeline: view()) {
+    .rail {
+      animation: rail-draw linear both;
+      animation-timeline: view();
+      animation-range: entry 30% cover 55%;
+    }
+  }
+
+  /* Disclosure that opens instead of snapping. Chrome-only today; the
+     rest get the instant open they already had. */
+  @supports (interpolate-size: allow-keywords) {
+    :root { interpolate-size: allow-keywords; }
+    details.tanya::details-content {
+      block-size: 0;
+      overflow: clip;
+      transition:
+        block-size 0.34s var(--ease-settle),
+        content-visibility 0.34s allow-discrete;
+    }
+    details.tanya[open]::details-content { block-size: auto; }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ------------------------------------------------------------------
+   Scroll reveals.
+
+   Every section arrives, but not the same way twice: what moves is
+   derived from what the section is. Records settle in sequence, ledger
+   entries are written in from the margin, arched photographs unveil,
+   the closing panel comes forward. Driven by view timelines so there is
+   no observer on the main thread; the resting state of every one of
+   these is its final state, so a browser without timelines, a failed
+   script, or reduced motion all leave the page whole.
+
+   Timed on the `cover` phase, never `entry`. An `entry` range is only
+   as long as the element is tall, so a heading finished inside 60px of
+   scroll — completed at the very bottom edge, long before the reader
+   looked at it, which is the same as no animation at all. `cover`
+   spans the viewport plus the element, so a short block and a tall one
+   both resolve at about the moment they reach the reading zone.
+------------------------------------------------------------------- */
+@keyframes sr-rise {
+  from { opacity: 0; transform: translateY(1.75rem); filter: blur(5px); }
+  to { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* Entries written in from the margin of a ledger. */
+@keyframes sr-wipe {
+  from { opacity: 0; transform: translateX(-1.75rem); filter: blur(4px); }
+  to { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* An arch uncovering what stands inside it. No blur: these are the
+   largest painted surfaces on the page and the filter is not worth it
+   on a mid-range phone. */
+@keyframes sr-unveil {
+  from { opacity: 0; transform: translateY(2.25rem) scale(1.035); }
+  to { opacity: 1; transform: none; }
+}
+
+/* The closing panel stepping forward to be answered. */
+@keyframes sr-come {
+  from { opacity: 0.4; transform: translateY(1.25rem) scale(0.978); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .sr,
+    .sr-wipe,
+    .sr-unveil,
+    .sr-come {
+      /* Composure, not a slider being dragged: linear maps scroll to
+         motion one-to-one, and a hard ease-out finishes too early. */
+      animation-timing-function: var(--ease-scroll);
+      animation-fill-mode: both;
+      animation-timeline: view();
+      animation-range: cover 3% cover 27%;
+    }
+    .sr { animation-name: sr-rise; }
+    .sr-wipe { animation-name: sr-wipe; }
+    .sr-unveil { animation-name: sr-unveil; animation-range: cover 0% cover 24%; }
+    .sr-come { animation-name: sr-come; animation-range: cover 0% cover 22%; }
+
+    /* Stagger is a shift of the scroll range, not a time delay, so a
+       slow scroll reads the sequence and a fast one does not queue. */
+    .st1 { animation-range: cover 7% cover 31%; }
+    .st2 { animation-range: cover 11% cover 35%; }
+    .st3 { animation-range: cover 15% cover 39%; }
+    .st4 { animation-range: cover 19% cover 43%; }
+  }
+}
+
+/* Fallback for browsers with no view timelines. Applied by script only
+   after support is ruled out, so nothing is ever hidden by a stylesheet
+   the script never reached. */
+.sr-js :is(.sr, .sr-wipe, .sr-unveil, .sr-come) {
+  opacity: 0;
+  transition:
+    opacity 0.95s var(--ease-scroll),
+    transform 0.95s var(--ease-scroll),
+    filter 0.95s var(--ease-scroll);
+}
+.sr-js .sr { transform: translateY(1.75rem); filter: blur(5px); }
+.sr-js .sr-wipe { transform: translateX(-1.75rem); filter: blur(4px); }
+.sr-js .sr-unveil { transform: translateY(2.25rem) scale(1.035); }
+.sr-js .sr-come { opacity: 0.4; transform: translateY(1.25rem) scale(0.978); }
+.sr-js :is(.sr, .sr-wipe, .sr-unveil, .sr-come).sr-in {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+.sr-js .st1 { transition-delay: 0.1s; }
+.sr-js .st2 { transition-delay: 0.2s; }
+.sr-js .st3 { transition-delay: 0.3s; }
+.sr-js .st4 { transition-delay: 0.4s; }
+
+/* Press feedback stays under reduced motion: it confirms an action
+   rather than decorating one. */
+.press {
+  transition: transform 0.12s var(--ease-settle);
+}
+.press:active {
+  transform: scale(0.975);
+}
+
+/* One grade across every photograph so the page reads as a single body
+   of work rather than a folder of sourced files. */
+@utility graded {
+  filter: saturate(0.22) sepia(0.32) contrast(1.14) brightness(0.97);
+}
+
+/* The hero photograph read as night: luminance only, so the navy tint
+   layered over it supplies the entire hue. */
+@utility night {
+  filter: saturate(0.12) brightness(0.52) contrast(1.22);
 }
